@@ -40,7 +40,7 @@ app.post("/api/tables", function(req, res) {
   if ( reservations.length < 5 ){
     reservations.push(newreserve);
   } else {
-    reservations.push(waitlist);
+    waitlist.push(newreserve);
   }
 
   res.json(newreserve);
